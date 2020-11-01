@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div id="yla_tab" title="" class="mainBgColor panel-body panel-body-noheader panel-body-noborder" style="width: 1324px;">   
+    <form id="yla_form" method="post"> 
+      <input type="hidden" id="laxx_accessfrom" name="laxx.accessfrom" value="sqtj">
+      <input type="hidden" id="sqtj_ah" name="sqtj.ah">
+      <input type="hidden" id="sqtj_nh" name="sqtj.ndh">
+      <input type="hidden" id="sqtj_zh" name="sqtj.zh">
+      <input type="hidden" id="sqtj_zh_text" name="sqtj.zhtext">
+      <input type="hidden" id="sqtj_saxh" name="sqtj.saxh">
+      <input type="hidden" id="sqtj_djlx" name="sqtj.djlx" value="0">
+      <input type="hidden" name="laxx.ysfjm">
+      <input type="hidden" name="laxx.fjm" value="JB1">
+      <!-- 默认自动生成  -->
+      <input type="hidden" id="sqtj_ahscfs" name="sqtj.ahscfs" value="1">
+      <input type="hidden" id="sqtj_zd_zh" name="sqtj.zdzh" value="1">
+      <center>
+        <h1 style="font:30px/30px 华文中宋">联调申请</h1>
+      </center>
+      <div style="width:1000px;margin:0 auto 5px auto;color:blue">
+        <b class="red">*</b>必填信息 &nbsp;<b class="gray">*</b>选填信息
+      </div> 
+     <div class="panel" style="margin: 0px auto; display: block; width: 1000px; left: 150px;"><div class="panel-header" style="width: 1000px;"><div class="panel-title panel-with-icon"><b style="font:14px 宋体 ;color:red;font-weight:bold">基本信息</b></div><div class="panel-icon icon-tip"></div><div class="panel-tool"><a href="javascript:;" class="panel-tool-collapse"></a></div></div><div class="easyui-panel mainBgColor panel-body" title="" style="text-align: center; padding: 5px; width: 1000px;" data-options="left:150,style:{margin:'0 auto'},iconCls:'icon-tip',collapsible:true">    
+          <table cellpadding="4" align="center" cellspacing="0" width="900"> 
+              <tbody><tr>  
+                    <td align="right">诉讼案号：</td>  
+                    <td align="left">
+                      <input id="zddrah" class="easyui-textbox textbox-f" type="text" style="padding: 0px 10px; width: 220px; display: none;" textboxname="sqtj.laah"><span class="textbox" style="width: 220px; height: 32px;"><input id="_easyui_textbox_input1" type="text" class="textbox-text validatebox-text textbox-prompt" autocomplete="off" tabindex="" placeholder="" style="padding: 0px 10px; margin: 0px; height: 30px; line-height: 30px; width: 218px;"><input type="hidden" class="textbox-value" name="sqtj.laah" value=""></span>
+                    </td>  
+                    <td align="right" data-id="YYSAH_DIV" style="display: none;">原一审案号：</td>  
+                    <td align="left" data-id="YYSAH_DIV" style="display: none;">
+                      <input id="sstjah" class="easyui-textbox textbox-f" type="text" style="padding: 0px 10px; width: 220px; display: none;" textboxname="sqtj.xgssah"><span class="textbox" style="width: 220px; height: 32px;"><input id="_easyui_textbox_input2" type="text" class="textbox-text validatebox-text textbox-prompt" autocomplete="off" tabindex="" placeholder="" style="padding: 0px 10px; margin: 0px; height: 30px; line-height: 30px; width: 218px;"><input type="hidden" class="textbox-value" name="sqtj.xgssah" value=""></span>
+                    </td> 
+                    
+                </tr>
+            <tr>  
+                  <td align="right"><b class="red">*</b>诉讼类型：</td>  
+                  <td align="left">
+                    <input id="laxx_sslx" required="true" class="easyui-combotree combotree-f combo-f textbox-f" data-options="width:220,height:30,valueField:'id',textField:'text',url:'/ssfwpt/sqtj/getTjjgTree?fldm=W14',onSelect:function(rec){selectSslx(rec.id);}" textboxname="laxx.sslx" comboname="laxx.sslx" style="display: none;"><span class="textbox combo" style="width: 220px; height: 30px;"><span class="textbox-addon textbox-addon-right" style="right: 0px; top: 0px;"><a href="javascript:;" class="textbox-icon combo-arrow" icon-index="0" tabindex="-1" style="width: 18px; height: 28px;"></a></span><input id="_easyui_textbox_input27" type="text" class="textbox-text validatebox-text validatebox-readonly" autocomplete="off" tabindex="" readonly="readonly" placeholder="" style="margin: 0px 18px 0px 0px; padding-top: 0px; padding-bottom: 0px; height: 28px; line-height: 28px; width: 200px;"><input type="hidden" class="textbox-value" name="laxx.sslx" value="1"></span>
+                  </td> 
+                  <td align="right"><b class="red">*</b>申请人类型：</td>  
+                  <td align="left">
+          <input id="laxx_sqrlx" required="true" class="easyui-combobox combobox-f combo-f textbox-f" data-options="width:220,editable:false,valueField:'id',textField:'text',url:'/common/dict?fldm=W20'" textboxname="laxx.sqrlx" comboname="laxx.sqrlx" style="display: none;"><span class="textbox combo" style="width: 220px; height: 32px;"><span class="textbox-addon textbox-addon-right" style="right: 0px; top: 0px;"><a href="javascript:;" class="textbox-icon combo-arrow" icon-index="0" tabindex="-1" style="width: 18px; height: 30px;"></a></span><input id="_easyui_textbox_input7" type="text" class="textbox-text validatebox-text validatebox-readonly" autocomplete="off" tabindex="" readonly="readonly" placeholder="" style="margin: 0px 18px 0px 0px; padding-top: 0px; padding-bottom: 0px; height: 30px; line-height: 30px; width: 200px;"><input type="hidden" class="textbox-value" name="laxx.sqrlx" value="2"></span>                    
+                </td>  
+              </tr>
+              <tr>  
+                  <td align="right"><b class="red">*</b>调解立案申请人：</td>  
+                  <td align="left">
+                    <input id="laxx_lasqr" required="true" class="easyui-textbox textbox-f" data-options="width:220" textboxname="laxx.lasqr" style="display: none;"><span class="textbox" style="width: 220px; height: 32px;"><input id="_easyui_textbox_input3" type="text" class="textbox-text validatebox-text" autocomplete="off" tabindex="" placeholder="" style="margin: 0px; padding-top: 0px; padding-bottom: 0px; height: 30px; line-height: 30px; width: 218px;" title=""><input type="hidden" class="textbox-value" name="laxx.lasqr" value="中国太平洋财产保险股份有限公司东莞分公司"></span>
+                  </td> 
+                  <td align="right"><b class="red">*</b>申请人手机号码：</td>  
+                  <td align="left">
+          <input id="laxx_sjhm" required="true" class="easyui-textbox textbox-f" data-options="width:220,validType:'phoneNumber'" textboxname="laxx.sjhm" style="display: none;"><span class="textbox" style="width: 220px; height: 32px;"><input id="_easyui_textbox_input4" type="text" class="textbox-text validatebox-text" autocomplete="off" tabindex="" placeholder="" style="margin: 0px; padding-top: 0px; padding-bottom: 0px; height: 30px; line-height: 30px; width: 218px;" title=""><input type="hidden" class="textbox-value" name="laxx.sjhm" value="18576856371"></span>                    
+                </td>  
+              </tr>
+            <tr>  
+                  <td align="right"><b class="red">*</b>标的金额：</td>  
+                  <td align="left">
+                    <input id="bdje" type="text" class="easyui-numberbox easyui-validatebox numberbox-f textbox-f validatebox-text validatebox-invalid" required="true" style="padding: 0px 10px; display: none;" data-options="width:220,min:0,precision:2,prefix:'￥',groupSeparator:','" textboxname="laxx.ssbd" numberboxname="laxx.ssbd"><span class="textbox numberbox" style="width: 220px; height: 32px;"><input id="_easyui_textbox_input23" type="text" class="textbox-text validatebox-text" autocomplete="off" tabindex="" placeholder="" style="padding: 0px 10px; margin: 0px; height: 30px; line-height: 30px; width: 218px;" title=""><input type="hidden" class="textbox-value" name="laxx.ssbd" value="2000.00"></span>
+                  </td>  
+                  <td align="right"><b class="gray">*</b>标的物：</td>  
+                  <td align="left"><input name="laxx.ssbdw" type="text" class="easyui-validatebox input_txt validatebox-text" style="width:220px;padding:0 10px"></td>  
+              </tr>
+              <tr>
+                <td align="right"><b class="gray">*</b>标的行为：</td> 
+                <td align="left" colspan="3"><input name="laxx.ssbdxw" class="easyui-validatebox input_txt validatebox-text" style="width:655px;padding:0 10px"></td> 
+              </tr>
+               <tr>
+                 <td align="right"><b class="red">*</b>涉管辖部门：</td>  
+                  <td align="left">
+                    <input id="ssft" value="0" required="true" class="easyui-combobox combobox-f combo-f textbox-f" data-options="width:220,editable:false,valueField:'bm',textField:'mc',url:'/ssfwpt/sqtj/sftbm'" textboxname="sqtj.sftbm" comboname="sqtj.sftbm" style="display: none;"><span class="textbox combo" style="width: 220px; height: 32px;"><span class="textbox-addon textbox-addon-right" style="right: 0px; top: 0px;"><a href="javascript:;" class="textbox-icon combo-arrow" icon-index="0" tabindex="-1" style="width: 18px; height: 30px;"></a></span><input id="_easyui_textbox_input8" type="text" class="textbox-text validatebox-text validatebox-readonly" autocomplete="off" tabindex="" readonly="readonly" placeholder="" style="margin: 0px 18px 0px 0px; padding-top: 0px; padding-bottom: 0px; height: 30px; line-height: 30px; width: 200px;"><input type="hidden" class="textbox-value" name="sqtj.sftbm" value="0"></span>
+                  </td>
+                <td align="right"><b class="red">*</b>涉联调部门：</td>  
+                  <td align="left">
+                    <input id="sqtj_sltbm" required="true" class="easyui-combobox combobox-f combo-f textbox-f" style="width: 220px; display: none;" data-options="editable:false,valueField:'bm',textField: 'mc',readonly:false,url:'/ssfwpt/sqtj/sltbm'" textboxname="sqtj.sltbm" comboname="sqtj.sltbm"><span class="textbox combo" style="width: 220px; height: 32px;"><span class="textbox-addon textbox-addon-right" style="right: 0px; top: 0px;"><a href="javascript:;" class="textbox-icon combo-arrow visited" icon-index="0" tabindex="-1" style="width: 18px; height: 30px;"></a></span><input id="_easyui_textbox_input9" type="text" class="textbox-text validatebox-text validatebox-readonly" autocomplete="off" tabindex="" readonly="readonly" placeholder="" style="margin: 0px 18px 0px 0px; padding-top: 0px; padding-bottom: 0px; height: 30px; line-height: 30px; width: 200px;" title=""><input type="hidden" class="textbox-value" name="sqtj.sltbm" value="JB147"></span>
+                  </td>
+              </tr>
+              <tr>
+                <td align="right"><b class="red">*</b>递交材料受理点：</td> 
+                <td align="left"><input name="laxx.J_SLD" class="easyui-validatebox input_txt validatebox-text" style="padding:0 10px;width:220px;" value="本部"></td> 
+                <td align="right"><b class="red">*</b>调解类型：</td>  
+                  <td align="left">
+                    <input required="true" class="easyui-combobox combobox-f combo-f textbox-f" id="sqtjTjlx" style="width: 220px; display: none;" textboxname="sqtj.tjlx" comboname="sqtj.tjlx"><span class="textbox combo" style="width: 220px; height: 32px;"><span class="textbox-addon textbox-addon-right" style="right: 0px; top: 0px;"><a href="javascript:;" class="textbox-icon combo-arrow" icon-index="0" tabindex="-1" style="width: 18px; height: 30px;"></a></span><input id="_easyui_textbox_input28" type="text" class="textbox-text validatebox-text" autocomplete="off" tabindex="" placeholder="" style="margin: 0px 18px 0px 0px; padding-top: 0px; padding-bottom: 0px; height: 30px; line-height: 30px; width: 200px;"><input type="hidden" class="textbox-value" name="sqtj.tjlx" value="1"></span>
+                  </td>
+              </tr>
+              <tr>  
+                  <td align="right"><b class="red">*</b>案件涉及：</td>  
+                  <td align="left">
+                    <input value="255" required="true" class="easyui-combobox combobox-f combo-f textbox-f" data-options="width:220,editable:false,valueField:'id',textField:'text',url:'/common/dict?fldm=W24'" textboxname="laxx.ajsj" comboname="laxx.ajsj" style="display: none;"><span class="textbox combo" style="width: 220px; height: 32px;"><span class="textbox-addon textbox-addon-right" style="right: 0px; top: 0px;"><a href="javascript:;" class="textbox-icon combo-arrow" icon-index="0" tabindex="-1" style="width: 18px; height: 30px;"></a></span><input id="_easyui_textbox_input11" type="text" class="textbox-text validatebox-text validatebox-readonly" autocomplete="off" tabindex="" readonly="readonly" placeholder="" style="margin: 0px 18px 0px 0px; padding-top: 0px; padding-bottom: 0px; height: 30px; line-height: 30px; width: 200px;"><input type="hidden" class="textbox-value" name="laxx.ajsj" value="255"></span>
+                  </td>
+                  <td align="right"><b class="red">*</b>诉讼阶段：</td>  
+                  <td align="left">
+                    <input id="ssjd" required="true" class="easyui-combobox combobox-f combo-f textbox-f" data-options="width:220,editable:false,valueField:'id',textField:'text',url:'/common/dict?fldm=SSTJ_W85'" textboxname="sqtj.ssjd" comboname="sqtj.ssjd" style="display: none;"><span class="textbox combo textbox-readonly" style="width: 220px; height: 32px;"><span class="textbox-addon textbox-addon-right" style="right: 0px; top: 0px;"><a href="javascript:;" class="textbox-icon combo-arrow textbox-icon-disabled" icon-index="0" tabindex="-1" style="width: 18px; height: 30px;"></a></span><input id="_easyui_textbox_input12" type="text" class="textbox-text validatebox-text validatebox-readonly" autocomplete="off" tabindex="" readonly="readonly" placeholder="" style="margin: 0px 18px 0px 0px; padding-top: 0px; padding-bottom: 0px; height: 30px; line-height: 30px; width: 200px;"><input type="hidden" class="textbox-value" name="sqtj.ssjd" value="1"></span>
+                  </td>  
+              </tr>
+                <tr>  
+                  <td align="right"><b class="red">*</b>是否敏感案件：</td>  
+                  <td align="left">
+                    <input value="2" required="true" class="easyui-combobox combobox-f combo-f textbox-f" data-options="width:220,editable:false,valueField:'id',textField:'text',url:'/common/dict?fldm=10'" textboxname="sqtj.sfmgaj" comboname="sqtj.sfmgaj" style="display: none;"><span class="textbox combo" style="width: 220px; height: 32px;"><span class="textbox-addon textbox-addon-right" style="right: 0px; top: 0px;"><a href="javascript:;" class="textbox-icon combo-arrow" icon-index="0" tabindex="-1" style="width: 18px; height: 30px;"></a></span><input id="_easyui_textbox_input13" type="text" class="textbox-text validatebox-text validatebox-readonly" autocomplete="off" tabindex="" readonly="readonly" placeholder="" style="margin: 0px 18px 0px 0px; padding-top: 0px; padding-bottom: 0px; height: 30px; line-height: 30px; width: 200px;"><input type="hidden" class="textbox-value" name="sqtj.sfmgaj" value="2"></span>
+                  </td>
+                   <td align="right"><b class="red">*</b>收案时间：</td>  
+                  <td align="left">
+                    <input id="sasj" required="true" class="easyui-datetimebox combo-f textbox-f datetimebox-f datebox-f" data-options="width:220" textboxname="sqtj.sasj" comboname="sqtj.sasj" style="display: none;"><span class="textbox combo datebox" style="width: 220px; height: 32px;"><span class="textbox-addon textbox-addon-right" style="right: 0px; top: 0px;"><a href="javascript:;" class="textbox-icon combo-arrow" icon-index="0" tabindex="-1" style="width: 18px; height: 30px;"></a></span><input id="_easyui_textbox_input29" type="text" class="textbox-text validatebox-text" autocomplete="off" tabindex="" placeholder="" style="margin: 0px 18px 0px 0px; padding-top: 0px; padding-bottom: 0px; height: 30px; line-height: 30px; width: 200px;"><input type="hidden" class="textbox-value" name="sqtj.sasj" value="2020-10-26 19:19:44"></span>
+                  </td>
+         <!-- <td align="right"><b class="red">*</b>调解申请人：</td>  
+                  <td align="left"><input id="sqtj_tjsqr" name="sqtj.tjsqr" type="text" required="true"  class="easyui-validatebox input_txt"  style = "width:220px;padding:0 10px"/></td>   -->
+              </tr>
+              <tr>  
+                  <td align="right"><b class="red">*</b>调解期限(天)：</td>  
+                  <td align="left">
+                    <input id="tjqx" value="1" required="true" class="easyui-numberbox numberbox-f textbox-f" style="width: 220px; display: none;" textboxname="sqtj.tjqx" numberboxname="sqtj.tjqx"><span class="textbox numberbox" style="width: 220px; height: 32px;"><input id="_easyui_textbox_input24" type="text" class="textbox-text validatebox-text" autocomplete="off" tabindex="" placeholder="" style="margin: 0px; padding-top: 0px; padding-bottom: 0px; height: 30px; line-height: 30px; width: 218px;"><input type="hidden" class="textbox-value" name="sqtj.tjqx" value="30"></span>
+                  </td>  
+                  
+                  <td align="right">涉疫情民事案件：</td>  
+                  <td align="left">
+                    <input id="sfsjyq" value="0" class="easyui-combobox combobox-f combo-f textbox-f" data-options="width:220,editable:false,valueField:'id',textField:'text',url:'/common/dict?fldm=W47'" textboxname="laxx.sfsjyq" comboname="laxx.sfsjyq" style="display: none;"><span class="textbox combo" style="width: 220px; height: 32px;"><span class="textbox-addon textbox-addon-right" style="right: 0px; top: 0px;"><a href="javascript:;" class="textbox-icon combo-arrow" icon-index="0" tabindex="-1" style="width: 18px; height: 30px;"></a></span><input id="_easyui_textbox_input14" type="text" class="textbox-text validatebox-text validatebox-readonly" autocomplete="off" tabindex="" readonly="readonly" placeholder="" style="margin: 0px 18px 0px 0px; padding-top: 0px; padding-bottom: 0px; height: 30px; line-height: 30px; width: 200px;"><input type="hidden" class="textbox-value" name="laxx.sfsjyq" value="0"></span>
+                  </td> 
+              </tr>
+              <tr>
+                <td align="right"><b class="red">*</b>案由：</td> 
+                <td align="left" colspan="3">
+                  <div style="display: inline-block">
+                    <input id="aydm" type="text" placeholder="点击这里选择案由" readonly="readonly" onfocus="funChooseAyx(this)" class="input_txt easyui-validatebox validatebox-text validatebox-readonly" style="width:510px;padding:0 10px">		
+            <input id="ay" type="hidden" name="laxx.laay" value="9677">
+                    <button id="cyay" type="button" class="btn button-primary easyui-linkbutton l-btn l-btn-small" iconcls="icon-save" onclick="funSetGeCyay(this)" group=""><span class="l-btn-left l-btn-icon-left"><span class="l-btn-text">设置个人常用案由</span><span class="l-btn-icon icon-save">&nbsp;</span></span></button>
+                  </div>
+                </td>
+              </tr>
+              
+              <tr id="tr_ssqq">  
+                  <td align="right" valign="top">诉讼请求（申请事项）：</td>  
+                  <td align="left" colspan="3">
+                    <textarea id="LAXX_SSQQ_INPUT" name="laxx.ssqq" rows="6" cols="70" class="textarea easyui-validatebox validatebox-text" style="width:590px;padding:0 10px"></textarea>
+                 </td>  
+              </tr>
+              <tr>  
+                  <td align="right" valign="top">事实与理由（申请理由）：</td>  
+                  <td align="left" colspan="3"><textarea name="laxx.ssyly" rows="6" cols="70" style="width:590px;padding:0 10px"></textarea></td>  
+              </tr>
+              <tr>  
+                  <td align="right" valign="top">备注（留言）：</td>  
+                  <td align="left" colspan="3"><textarea id="TEXTAREA_BZ" name="laxx.ly" rows="6" cols="70" style="width:590px;padding:0 10px">诉调收案登记</textarea></td>  
+              </tr>
+          </tbody></table>
+    </div></div>
+    <div class="panel" style="margin: 10px auto; display: block; width: 1000px;"><div class="panel-header" style="width: 1000px;"><div class="panel-title panel-with-icon"><b id="yg_ssdw_mc" style="font:14px 宋体 ;color:red;font-weight:bold">原告/申请人/上诉人</b></div><div class="panel-icon icon-tip"></div><div class="panel-tool"><a href="javascript:;" class="panel-tool-collapse"></a></div></div><div id="yg_list" class="easyui-panel panel-body" title="" style="padding: 5px; width: 1000px;" data-options="style:{margin:'10px auto'},iconCls:'icon-tip',collapsible:true">
+      <div style="padding:3px 5px;background: url('/images/resetbutton.jpg') repeat-x left;border-bottom:1px solid #ccc">
+      <a href="javascript:void(0)" class="easyui-linkbutton l-btn l-btn-small" data-options="iconCls:'icon-add'" onclick="funAddDsr('yg','zrr')" title="新增" group="" id=""><span class="l-btn-left l-btn-icon-left"><span class="l-btn-text">增加自然人</span><span class="l-btn-icon icon-add">&nbsp;</span></span></a>
+      <a href="javascript:void(0)" class="easyui-linkbutton l-btn l-btn-small" data-options="iconCls:'icon-add'" onclick="funAddDsr('yg','fr')" title="新增" group="" id=""><span class="l-btn-left l-btn-icon-left"><span class="l-btn-text">增加法人</span><span class="l-btn-icon icon-add">&nbsp;</span></span></a>
+      <a href="javascript:void(0)" class="easyui-linkbutton l-btn l-btn-small" data-options="iconCls:'icon-add'" onclick="funAddDsr('yg','qt')" title="新增" group="" id=""><span class="l-btn-left l-btn-icon-left"><span class="l-btn-text">增加非法人其他组织</span><span class="l-btn-icon icon-add">&nbsp;</span></span></a>
+    </div>
+           </div></div>
+           <div class="panel" style="margin: 10px auto; display: block; width: 1000px;"><div class="panel-header" style="width: 1000px;"><div class="panel-title panel-with-icon"><b id="bg_ssdw_mc" style="font:14px 宋体 ;color:red;font-weight:bold">被告/被申请人/被上诉人</b></div><div class="panel-icon icon-tip"></div><div class="panel-tool"><a href="javascript:;" class="panel-tool-collapse"></a></div></div><div id="bg_list" class="easyui-panel panel-body" title="" style="padding: 5px; width: 1000px;" data-options="style:{margin:'10px auto'},iconCls:'icon-tip',collapsible:true">
+             <div style="padding:3px 5px;background: url('/images/resetbutton.jpg') repeat-x left;border-bottom:1px solid #ccc">
+      <a href="javascript:void(0)" class="easyui-linkbutton l-btn l-btn-small" data-options="iconCls:'icon-add'" onclick="funAddDsr('bg','zrr')" title="新增" group="" id=""><span class="l-btn-left l-btn-icon-left"><span class="l-btn-text">增加自然人</span><span class="l-btn-icon icon-add">&nbsp;</span></span></a>
+      <a href="javascript:void(0)" class="easyui-linkbutton l-btn l-btn-small" data-options="iconCls:'icon-add'" onclick="funAddDsr('bg','fr')" title="新增" group="" id=""><span class="l-btn-left l-btn-icon-left"><span class="l-btn-text">增加法人</span><span class="l-btn-icon icon-add">&nbsp;</span></span></a>
+      <a href="javascript:void(0)" class="easyui-linkbutton l-btn l-btn-small" data-options="iconCls:'icon-add'" onclick="funAddDsr('bg','qt')" title="新增" group="" id=""><span class="l-btn-left l-btn-icon-left"><span class="l-btn-text">增加非法人组织</span><span class="l-btn-icon icon-add">&nbsp;</span></span></a>
+    </div>
+           </div></div>
+           <div class="panel" style="margin: 10px auto; display: block; width: 1000px;"><div class="panel-header" style="width: 1000px;"><div class="panel-title panel-with-icon"><b style="font:14px 宋体 ;color:red;font-weight:bold">第三人/原审被告</b></div><div class="panel-icon icon-tip"></div><div class="panel-tool"><a href="javascript:;" class="panel-tool-collapse"></a></div></div><div id="dsr_list" class="easyui-panel panel-body" title="" style="padding: 5px; width: 1000px;" data-options="style:{margin:'10px auto'},iconCls:'icon-tip',collapsible:true">
+             <div style="padding:3px 5px;background: url('/images/resetbutton.jpg') repeat-x left;border-bottom:1px solid #ccc">
+      <a href="javascript:void(0)" class="easyui-linkbutton l-btn l-btn-small" data-options="iconCls:'icon-add'" onclick="funAddDsr('dsr','zrr')" title="新增" group="" id=""><span class="l-btn-left l-btn-icon-left"><span class="l-btn-text">增加自然人</span><span class="l-btn-icon icon-add">&nbsp;</span></span></a>
+      <a href="javascript:void(0)" class="easyui-linkbutton l-btn l-btn-small" data-options="iconCls:'icon-add'" onclick="funAddDsr('dsr','fr')" title="新增" group="" id=""><span class="l-btn-left l-btn-icon-left"><span class="l-btn-text">增加法人</span><span class="l-btn-icon icon-add">&nbsp;</span></span></a>
+      <a href="javascript:void(0)" class="easyui-linkbutton l-btn l-btn-small" data-options="iconCls:'icon-add'" onclick="funAddDsr('dsr','qt')" title="新增" group="" id=""><span class="l-btn-left l-btn-icon-left"><span class="l-btn-text">增加非法人组织</span><span class="l-btn-icon icon-add">&nbsp;</span></span></a>
+    </div>
+           </div></div>
+           <div id="div_qsz_container">
+<!-- $('#zdsc_qsz_input').show(); -->
+<div class="panel" style="margin: 10px auto; display: block; width: 1000px;"><div class="panel-header" style="width: 1000px;"><div class="panel-title panel-with-icon"><b style="font:14px 宋体 ;color:red;font-weight:bold">起诉状/上诉状</b>(支持png、jpg、doc、pdf等格式)</div><div class="panel-icon icon-tip"></div><div class="panel-tool"><a href="javascript:;" class="icon-add"></a><a href="javascript:;" class="panel-tool-collapse"></a></div></div><div id="div_qsz" class="easyui-panel zjxxs_panel mainBgColor panel-body" title="" style="padding: 5px; width: 1000px;" data-options="style:{margin:'10px auto'},iconCls:'icon-tip',collapsible:true,tools:[{iconCls:'icon-add',handler:function(){
+file_index++;
+var clone = $('#div_sscl').clone(true);
+clone.attr('id','zjxxs_file_container_'+file_index);
+clone.find('input[type=\'file\']').attr('id','zjxxs_file_'+file_index);
+clone.appendTo($('#div_qsz'));
+}}]"><div id="zjxxs_file_container_1" class="console_file" style="margin:0 0 5px 0;padding:0">
+<input type="file" style="color:blue;" multiple="multiple" id="zjxxs_file_1">
+<!-- <input id="zdsc_qsz_input" type="button" value="自动生成" class="addform2" onclick="funZdscQsz(this)"/> -->
+<input type="button" value="上传" class="addform2" onclick="funUploadClxx(this)">&nbsp;<input type="button" value="删除" class="addform2" onclick="funDeleteUpload(this)">
+<!-- <input type="hidden" name="zjxxs.fjid"/>
+<input type="hidden" name="zjxxs.lx"/>
+<input type="hidden" name="zjxxs.zjid"/> -->
+</div></div></div>
+</div><div id="div_ztcl_container">
+               <!-- $('#zdsc_qsz_input').hide(); -->
+             <div class="panel" style="margin: 10px auto; display: block; width: 1000px;"><div class="panel-header" style="width: 1000px;"><div class="panel-title panel-with-icon"><b style="font:14px 宋体 ;color:red;font-weight:bold">主体材料</b>(支持png、jpg、doc、pdf等格式)</div><div class="panel-icon icon-tip"></div><div class="panel-tool"><a href="javascript:;" class="icon-add"></a><a href="javascript:;" class="panel-tool-collapse"></a></div></div><div id="div_ztcl" class="easyui-panel zjxxs_panel mainBgColor panel-body" title="" style="padding: 5px; width: 1000px;" data-options="id:'test_panel',style:{margin:'10px auto'},iconCls:'icon-tip',collapsible:true,tools:[{iconCls:'icon-add',handler:function(){
+               file_index++;
+               var clone = $('#div_sscl').clone(true);
+               clone.attr('id','zjxxs_file_container_'+file_index);
+               clone.find('input[type=\'file\']').attr('id','zjxxs_file_'+file_index);
+               clone.appendTo($('#div_ztcl'));
+             }}]"></div></div>
+           </div>
+           <div id="div_zjcl_container">
+             <div class="panel" style="margin: 10px auto; display: block; width: 1000px;"><div class="panel-header" style="width: 1000px;"><div class="panel-title panel-with-icon"><b style="font:14px 宋体 ;color:red;font-weight:bold">证据材料</b>(支持png、jpg、doc、pdf等格式)</div><div class="panel-icon icon-tip"></div><div class="panel-tool"><a href="javascript:;" class="icon-add"></a><a href="javascript:;" class="panel-tool-collapse"></a></div></div><div id="div_zjcl" class="easyui-panel zjxxs_panel mainBgColor panel-body" title="" style="padding: 5px; width: 1000px;" data-options="id:'test_panel',style:{margin:'10px auto'},iconCls:'icon-tip',collapsible:true,tools:[{iconCls:'icon-add',handler:function(){
+               file_index++;
+               var clone = $('#div_sscl').clone(true);
+               clone.attr('id','zjxxs_file_container_'+file_index);
+               clone.find('input[type=\'file\']').attr('id','zjxxs_file_'+file_index);
+               clone.appendTo($('#div_zjcl'));
+             }}]"></div></div>
+           </div>
+           <div id="div_sjgxcl_container">
+               <!-- $('#zdsc_qsz_input').hide(); -->
+             <div class="panel" style="margin: 10px auto; display: block; width: 1000px;"><div class="panel-header" style="width: 1000px;"><div class="panel-title panel-with-icon"><b style="font:14px 宋体 ;color:red;font-weight:bold">涉及管辖材料</b>(支持png、jpg、doc、pdf等格式)</div><div class="panel-icon icon-tip"></div><div class="panel-tool"><a href="javascript:;" class="icon-add"></a><a href="javascript:;" class="panel-tool-collapse"></a></div></div><div id="div_sjgxcl" class="easyui-panel zjxxs_panel mainBgColor panel-body" title="" style="padding: 5px; width: 1000px;" data-options="style:{margin:'10px auto'},iconCls:'icon-tip',collapsible:true,tools:[{iconCls:'icon-add',handler:function(){
+               file_index++;
+               var clone = $('#div_sscl').clone(true);
+               clone.attr('id','zjxxs_file_container_'+file_index);
+               clone.find('input[type=\'file\']').attr('id','zjxxs_file_'+file_index);
+               clone.appendTo($('#div_sjgxcl'));
+             }}]"></div></div>
+           </div>
+           <div id="div_yspjws_container">
+             <div class="panel" style="margin: 10px auto; display: block; width: 1000px;"><div class="panel-header" style="width: 1000px;"><div class="panel-title panel-with-icon"><b style="font:14px 宋体 ;color:red;font-weight:bold">原审判决文书</b>(支持png、jpg、doc、pdf等格式)</div><div class="panel-icon icon-tip"></div><div class="panel-tool"><a href="javascript:;" class="icon-add"></a><a href="javascript:;" class="panel-tool-collapse"></a></div></div><div id="div_yspjws" class="easyui-panel zjxxs_panel mainBgColor panel-body" title="" style="padding: 5px; width: 1000px;" data-options="style:{margin:'10px auto'},iconCls:'icon-tip',collapsible:true,tools:[{iconCls:'icon-add',handler:function(){
+               file_index++;
+               var clone = $('#div_sscl').clone(true);
+               clone.attr('id','zjxxs_file_container_'+file_index);
+               clone.find('input[type=\'file\']').attr('id','zjxxs_file_'+file_index);
+               clone.appendTo($('#div_yspjws'));
+             }}]"></div></div>
+           </div>
+    </form>
+    <div class="row">
+      <div class="col-xs-12 search_col_div">
+    <div class="col-xs-12" style="text-align: center;">
+          <button id="bcan1" type="button" class="btn button-warning easyui-linkbutton l-btn l-btn-small" iconcls="icon-save" onclick="funYlaSubmit('1')" group=""><span class="l-btn-left l-btn-icon-left"><span class="l-btn-text">暂存</span><span class="l-btn-icon icon-save">&nbsp;</span></span></button>
+      <button id="bcan2" type="button" class="btn button-primary easyui-linkbutton l-btn l-btn-small" iconcls="icon-save" onclick="baocun('1');" group=""><span class="l-btn-left l-btn-icon-left"><span class="l-btn-text">提交</span><span class="l-btn-icon icon-save">&nbsp;</span></span></button>
+      <button id="bcan3" type="button" class="btn button-primary easyui-linkbutton l-btn l-btn-small" iconcls="icon-save" onclick="funYlaSubmit('2');" group="" style="display: none;"><span class="l-btn-left l-btn-icon-left"><span class="l-btn-text">保存</span><span class="l-btn-icon icon-save">&nbsp;</span></span></button>
+      <button id="bcan4" type="button" class="btn button-primary easyui-linkbutton l-btn l-btn-small" iconcls="icon-save" onclick="baocun('2');" group="" style="display: none;"><span class="l-btn-left l-btn-icon-left"><span class="l-btn-text">继续登记</span><span class="l-btn-icon icon-save">&nbsp;</span></span></button>
+          <button type="button" class="btn button-danger easyui-linkbutton l-btn l-btn-small" iconcls="icon-cancel" onclick="$('#win').window('close')" group="" id=""><span class="l-btn-left l-btn-icon-left"><span class="l-btn-text">取消</span><span class="l-btn-icon icon-cancel">&nbsp;</span></span></button>
+    </div>
+  </div>
+</div>
+</div>
+<script>
+  const bussinesName = document.querySelector("#_easyui_textbox_input3")
+  bussinesName.value = '中国太平洋保险股份有限公司东莞'
+  const phone = document.querySelector("#_easyui_textbox_input4")
+  phone.value = '1857685371'
+  const price = document.querySelector("#_easyui_textbox_input23")
+  price.value = '￥ 2000.00'
+  const department = document.querySelector("#_easyui_textbox_input9")
+  department.value = '南城人民法院'  
+  console.log(bussinesName);
+  bussinesName.addEventListener("input",(e)=>{
+    console.log(e.target.value,phone);
+    // phone.target.value = '123455'
+  })
+</script>
+</body>
+</html>

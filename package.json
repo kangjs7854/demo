@@ -1,0 +1,45 @@
+{
+  "name": "demo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "module": "ES6",
+  "scripts": {
+    "dev": "parcel ./src/index.html",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "@testing-library/react-hooks": "^3.4.2",
+    "@types/jest": "^26.0.14",
+    "jest": "^26.5.3",
+    "parcel-bundler": "^1.12.4",
+    "react-test-renderer": "^16.14.0",
+    "ts-jest": "^26.4.1",
+    "typescript": "^4.0.3"
+  },
+  "dependencies": {
+    "antd": "^4.7.3",
+    "antd-mobile": "^2.3.4",
+    "less": "^3.12.2",
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    },
+    "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
+    "moduleDirectories": [
+      "node_modules",
+      "src"
+    ],
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json",
+      "node"
+    ]
+  }
+}
